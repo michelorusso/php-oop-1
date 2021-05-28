@@ -31,11 +31,11 @@
             return implode($pass); //turn the array into a string
         }
 
-        public function __construct($name, $lastname , $date_of_birth, $username, $email , $genre , $general_info , $password) {
+        public function __construct($name, $lastname , $username, $date_of_birth, $email , $genre , $general_info , $password) {
             $this->name = $name;
             $this->lastname = $lastname;
-            $this->username = $username;
             $this->date_of_birth = $date_of_birth;
+            $this->username = $username;
             $this->email = $email;
             $this->genre = $genre;
             $this->general_info = $general_info;
@@ -55,10 +55,8 @@
     // Istanza Gina
     $gina = new USer('Gina', 'Barbieri', 'GinaBarb3558','19-04-99','barbgin@live.it','Female','barbie for life', $password );
 
-    $users[] = $mike;
-    $users[] = $paol;
-    $users[] = $gina;
-    var_dump($users);
+    $users = [$mike, $paol, $gina];
+    // var_dump($users);
 ?>
 
 <!DOCTYPE html>
@@ -79,13 +77,20 @@
     <h2>Users of a blog</h2>
 
     <ul>
-        <!-- User:
         <?php foreach($users as $user) {?>
-        <li>
-            <?php echo $user?>
-        </li>
-        <?php }?> -->
-
+            <li>
+                <ul>
+                    <li>Name: <?php echo $user->name; ?></li>
+                    <li>Lastname: <?php echo $user->lastname; ?></li>
+                    <li>Birthday: <?php echo $user->date_of_birth; ?></li>
+                    <li>Username: <?php echo $user->username; ?></li>
+                    <li>Email: <?php echo $user->email; ?></li>
+                    <li>Genre: <?php echo $user->genre; ?></li>
+                    <li>General Info: <?php echo $user->general_info; ?></li>
+                    <li>Password: <?php echo $user->password; ?></li>
+                </ul>
+            </li>
+        <?php } ?>
     </ul>
     
 </body>
