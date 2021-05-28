@@ -1,0 +1,10 @@
+Users of a blog.
+
+Name
+Lastname
+Username
+Email
+Date_of_birth
+Genre
+General_info
+Password

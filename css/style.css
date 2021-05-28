@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-left: 15px;
+}
