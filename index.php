@@ -69,7 +69,7 @@
     <title>User_Blog</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../PHP-OOP-1/css/style.css">
 
 </head>
 <body>
@@ -79,7 +79,7 @@
     <ul>
         <?php foreach($users as $user) {?>
             <li>
-                <ul>
+                <ul class="single-user">
                     <li>Name: <?php echo $user->name; ?></li>
                     <li>Lastname: <?php echo $user->lastname; ?></li>
                     <li>Birthday: <?php echo $user->date_of_birth; ?></li>

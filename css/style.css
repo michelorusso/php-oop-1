@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
+
 h2 {
-    margin-bottom: 30px;
+    padding: 20px;
 }
 
 ul {
@@ -14,4 +15,8 @@ ul {
 
 li {
     margin-left: 15px;
+}
+
+.single-user {
+    padding-top: 20px
 }
